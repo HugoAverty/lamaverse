@@ -14,11 +14,4 @@ WA.onInit().then(() => {
 
 }).catch(e => console.error(e));
 
-function closePopUp(){
-    if (currentPopup !== undefined) {
-        currentPopup.close();
-        currentPopup = undefined;
-    }
-}
-
 export {};
