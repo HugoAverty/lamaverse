@@ -32,6 +32,27 @@
          "id":112,
          "name":"door_step",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"autoClose",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
+                 "name":"autoOpen",
+                 "type":"bool",
+                 "value":false
+                }, 
+                {
+                 "name":"code",
+                 "type":"string",
+                 "value":"123"
+                }, 
+                {
+                 "name":"doorVariable",
+                 "type":"string",
+                 "value":"my_door"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":72,
