@@ -1417,7 +1417,7 @@
                         {
                          "name":"default",
                          "type":"string",
-                         "value":"http:\/\/gameofbombs.com\/#\/start\/"
+                         "value":"https:\/\/www.retrogames.cc\/embed\/24792-super-bomberman-europe.html"
                         }, 
                         {
                          "name":"label",
@@ -1445,7 +1445,7 @@
                         {
                          "name":"default",
                          "type":"string",
-                         "value":""
+                         "value":"https:\/\/supermarioemulator.com\/mario.php"
                         }, 
                         {
                          "name":"label",
