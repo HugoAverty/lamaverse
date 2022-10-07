@@ -329,6 +329,11 @@
                          "name":"openWebsite",
                          "type":"string",
                          "value":"{{{urlGame1}}}"
+                        }, 
+                        {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -347,6 +352,11 @@
                          "name":"openWebsite",
                          "type":"string",
                          "value":"{{{urlGame2}}}"
+                        }, 
+                        {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -365,6 +375,11 @@
                          "name":"openWebsite",
                          "type":"string",
                          "value":"{{{urlGame3}}}"
+                        }, 
+                        {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -383,6 +398,11 @@
                          "name":"openWebsite",
                          "type":"string",
                          "value":"{{{urlGirl}}}"
+                        }, 
+                        {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -401,6 +421,11 @@
                          "name":"openWebsite",
                          "type":"string",
                          "value":"{{{urlYellowDistrib}}}"
+                        }, 
+                        {
+                         "name":"silent",
+                         "type":"bool",
+                         "value":true
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1452,6 +1477,22 @@
                  "id":30,
                  "name":"urlGirl",
                  "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":""
+                        }, 
+                        {
+                         "name":"label",
+                         "type":"string",
+                         "value":"URL girl"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
                  "rotation":0,
                  "type":"variable",
                  "visible":true,
