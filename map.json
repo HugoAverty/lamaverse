@@ -2244,6 +2244,12 @@
                  "y":1556.59874106476
                 }],
          "opacity":1,
+         "properties":[
+                {
+                 "name":"tag",
+                 "type":"string",
+                 "value":"admin"
+                }],
          "type":"objectgroup",
          "visible":true,
          "x":0,
