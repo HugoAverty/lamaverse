@@ -5,6 +5,9 @@ import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 console.log('Script started successfully');
 
 let clubPopup: any = undefined;
+let popupPlaceBuild1: any = undefined;
+let popupPlaceBuild2: any = undefined;
+let popupPlaceBuild3: any = undefined;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
@@ -14,6 +17,24 @@ WA.onInit().then(() => {
     })
 
     WA.room.onLeaveLayer('zoneClubPopup').subscribe(closePopUp)
+
+    WA.room.onEnterLayer('zonePopupPlaceBuild1').subscribe(() => {
+        popupPlaceBuild1 = WA.ui.openPopup("popupPlaceBuild1","Opening soon...",[]);
+    })
+
+    WA.room.onLeaveLayer('zonePopupPlaceBuild1').subscribe(closePopUp)
+
+    WA.room.onEnterLayer('zonePopupPlaceBuild2').subscribe(() => {
+        popupPlaceBuild2 = WA.ui.openPopup("popupPlaceBuild2","Opening soon...",[]);
+    })
+
+    WA.room.onLeaveLayer('zonePopupPlaceBuild2').subscribe(closePopUp)
+
+    WA.room.onEnterLayer('zonePopupPlaceBuild3').subscribe(() => {
+        popupPlaceBuild3 = WA.ui.openPopup("popupPlaceBuild3","Opening soon...",[]);
+    })
+
+    WA.room.onLeaveLayer('zonePopupPlaceBuild3').subscribe(closePopUp)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
@@ -26,6 +47,18 @@ function closePopUp(){
     if (clubPopup !== undefined) {
         clubPopup.close();
         clubPopup = undefined;
+    }
+    if (popupPlaceBuild1 !== undefined) {
+        popupPlaceBuild1.close();
+        popupPlaceBuild1 = undefined;
+    }
+    if (popupPlaceBuild2 !== undefined) {
+        popupPlaceBuild2.close();
+        popupPlaceBuild2 = undefined;
+    }
+    if (popupPlaceBuild3 !== undefined) {
+        popupPlaceBuild3.close();
+        popupPlaceBuild3 = undefined;
     }
 }
 
