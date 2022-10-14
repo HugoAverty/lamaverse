@@ -129,7 +129,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/@\/llamaverse"
+                 "value":"\/@\/village#nft"
                 }],
          "type":"tilelayer",
          "visible":true,
