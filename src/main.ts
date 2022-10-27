@@ -8,9 +8,16 @@ let clubPopup: any = undefined;
 let popupPlaceBuild1: any = undefined;
 let popupPlaceBuild2: any = undefined;
 let popupPlaceBuild3: any = undefined;
+let popupHidden: any = undefined;
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
+
+    WA.room.onEnterLayer('zonePopupHidden').subscribe(() => {
+        popupHidden = WA.ui.openPopup("popupHidden","Congratulations! You found the hidden Llamaverse logo! The first 10 to screenshot this and tag @Metadventure_ on Twitter will get a free Whitelist!",[]);
+    })
+
+    WA.room.onLeaveLayer('zonePopupHidden').subscribe(closePopUp)
 
     WA.room.onEnterLayer('zoneClubPopup').subscribe(() => {
         clubPopup = WA.ui.openPopup("popupNightClub","This space is dedicated to NFT holder !",[]);
@@ -59,6 +66,10 @@ function closePopUp(){
     if (popupPlaceBuild3 !== undefined) {
         popupPlaceBuild3.close();
         popupPlaceBuild3 = undefined;
+    }
+    if (popupHidden !== undefined) {
+        popupHidden.close();
+        popupHidden = undefined;
     }
 }
 
